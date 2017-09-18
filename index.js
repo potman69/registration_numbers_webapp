@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const flash = require('express-flash');
 const session = require('express-session');
 const Models = require('./models');
-const models = Models('mongodb://localhost/anton-reg');
+const models = Models(process.env.MONGO_DB_URL || 'mongodb://localhost/anton-reg');
 const app = express();
 
 const numbers = Numbers(models);
@@ -23,7 +23,7 @@ app.use(flash());
 
 app.get("/",function(req, res){
   res.redirect('/index');
-})
+});
 app.get('/index', numbers.index);
 app.post('/index/add', numbers.add);
 app.post('/index/townPage', numbers.townPage);
