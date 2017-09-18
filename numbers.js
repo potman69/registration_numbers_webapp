@@ -42,7 +42,7 @@ module.exports = function(models) {
 
 
     if (number == '' || !number.name) {
-      req.flash('error', "Registration numbers can't be blank!")
+      req.flash('error', "Registration numbers can't be blank!")      
       res.render('numbers/index');
     } else {
       models.Number.findOne({name: req.body.number}, function(err, results) {
