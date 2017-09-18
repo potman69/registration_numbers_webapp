@@ -29,8 +29,8 @@ app.post('/index/add', numbers.add);
 app.post('/index/townPage', numbers.townPage);
 
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, function(){
-    console.log('Web app started on port : ' + port);
+    console.log('Web app started on port : ' + process.env.PORT || port);
 });
