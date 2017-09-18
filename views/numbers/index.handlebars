@@ -1,0 +1,51 @@
+<h1>Welcome To Numberplates!</h1>
+
+  {{#if messages.error}}
+  <div class="error">
+    {{messages.error}}
+    <br>
+    <br>
+  </div>
+  {{/if}}
+  <br>
+  <br>
+  {{#if messages.success}}
+  <div class="success">
+    {{messages.success}}
+    <br>
+    <br>
+  </div>
+  {{/if}}
+  <br>
+  <br>
+
+
+<form class="" action="/index/add" method="post">
+  <input type="text" name="number" placeholder="Registration number!">
+  <input  type="submit" name="submitButton" value="Add Number"><br>
+  <br>
+  </form>
+
+  <form class="" action="/index/townPage" method="post">
+          <input type="radio" id="CA" value="CA" name="town">
+          <label for="CA" class="light">CA</label>
+          <input type="radio" id="CY" value="CY" name="town">
+          <label for="CY" class="light">CY</label>
+          <input type="radio" id="CJ" value="CJ" name="town">
+          <label for="CJ" class="light">CJ</label><br>
+          <input type="submit" name="submitButton" value="Select a town to display">
+          <br>
+  </form>
+
+
+<ul>
+  {{#each numbers}}
+  <li>{{name}}</li>
+  {{/each}}
+</ul>
+
+<ul>
+  {{#each foundList}}
+  <li>{{this}}</li>
+  {{/each}}
+</ul>

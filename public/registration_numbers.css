@@ -1,0 +1,52 @@
+h1 {
+  color: red;
+}
+body {
+  text-align: center;
+
+  background-color: skyblue;
+}
+.error {
+  background-color: #ad0d0d;
+   border-style: solid;
+   border-color: black;
+   color: black;
+   padding: 40px 32px 15px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 30px;
+   border-radius: 50%;
+
+
+}
+.success {
+  background-color: #ad0d0d;
+   border-style: solid;
+   border-color: black;
+   color: black;
+   padding: 40px 32px 15px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 30px;
+   border-radius: 50%;
+
+}
+li {
+  color: red;
+  list-style: none;
+}
+
+ input {
+   background-color: #4CAF50;
+    border-style: solid;
+    border-color: black;
+    color: blue;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50%;
+}
